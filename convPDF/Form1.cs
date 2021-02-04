@@ -197,7 +197,7 @@ namespace convPDF
             table.AddColumn("13cm");
             var row = table.AddRow();
             table.Rows.LeftIndent = "0.5cm";
-            var image = row.Cells[0].AddImage("logo.png");
+            var image = row.Cells[0].AddImage("Resources/logo.png");
             image.Height = "19mm";
             var cell = row.Cells[1].AddParagraph("Energy Service Report\n");
             //cell.AddBookmark("Energy Service Report");
@@ -227,7 +227,7 @@ namespace convPDF
             
             Paragraph ProjectDetails = sec.AddParagraph("Project Details:", "Heading1");         
             
-            var cordium=sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\cordium.png");
+            var cordium=sec.AddImage("Resources/cordium.png");
             cordium.Left = ShapePosition.Center;
             cordium.Width = "17 cm";
             DotListAdd2(doc, "Project Manager: Frank Louwet",
@@ -314,7 +314,7 @@ namespace convPDF
             sec.AddParagraph("Installed technologies:", "Text");
             sec.AddParagraph("Geothermal/water gas absorption heat pumps – 2 pcs", "BulletList");
             //Paragraph fig1 = sec.AddParagraph("","figure");
-            var img1 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\2.1.jpg");
+            var img1 = sec.AddImage("Resources/2.1.jpg");
             //img1.Height = "10cm";
             img1.Top = "10mm";
             img1.LockAspectRatio = true;
@@ -324,12 +324,12 @@ namespace convPDF
             sec.AddParagraph("This month 20 MWh of heating energy was provided to the phase 1 building by heat pumps." +
                 " Consumption of gas compared with previous months is shown below.", "Text2");
 
-            var img2=sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\2.2.jpg");
+            var img2=sec.AddImage("Resources/2.2.jpg");
             img2.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 2: Phase 1 Energy Consumption monthly comparison", "figure");
 
             Paragraph fig3 = sec.AddParagraph("", "figure");        
-            fig3.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\2.3.jpg");
+            fig3.AddImage("Resources/2.3.jpg");
             fig3.AddFormattedText("\nFigure 3: Phase 1 Control ("+DateMY+")", "Text");
             sec.AddParagraph("The minimum return water temperature this month was 39.4 °C", "Text");
             
@@ -346,12 +346,12 @@ namespace convPDF
 
             Paragraph fig4 = sec.AddParagraph("", "figure");
             fig4.Format.SpaceBefore = "10mm";
-            fig4.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\4.1.jpg");
+            fig4.AddImage("Resources/4.1.jpg");
             fig4.AddFormattedText("\nFigure 4: Phase 2 Energy Diagram", "Text");
             sec.AddParagraph("The electrical and gas energy consumed by the " +
                 "installed technologies this month is shown below:", "Text");
             //Paragraph fig5 = sec.AddParagraph("", "figure");
-            var img5=sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\4.2.jpg");
+            var img5=sec.AddImage("Resources/4.2.jpg");
             img5.Left = ShapePosition.Center;
 
             sec.AddParagraph("Figure 5: Phase 2 Energy Consumption", "figure");
@@ -359,10 +359,10 @@ namespace convPDF
                 "building by heat pumps and the gas boiler.Consumption of electricity " +
                 "and gas compared with previous months is shown below.", "Text");
 
-            var img6 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\5.1.jpg");
+            var img6 = sec.AddImage("Resources/5.1.jpg");
             img6.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 6: Phase 2 Energy Consumption monthly comparison", "figure");
-            var img7 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\5.2.jpg");
+            var img7 = sec.AddImage("Resources/5.2.jpg");
             img7.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 7: Phase 2 Control ("+DateMY+")", "figure");
             sec.AddParagraph("The minimum return water temperature this month was 35.6 °C", "Text");
@@ -374,23 +374,23 @@ namespace convPDF
             sec.AddParagraph("Installed technologies:", "Text");
             DotListAdd2(doc, "Combined heat and power",
                "Gas boilers – 3 pcs");
-            var img8 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\6.1.jpg");
+            var img8 = sec.AddImage("Resources/6.1.jpg");
             img8.Left = ShapePosition.Center;
             img8.Top = "8mm";
             sec.AddParagraph("\nFigure 8: Phase 3 Energy Diagram", "figure");
             sec.AddParagraph("The gas energy consumed by the installed technologies this month is shown below:", "Text");
            
-            var img9 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\6.2.jpg");
+            var img9 = sec.AddImage("Resources/6.2.jpg");
             img9.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 9: Phase 3 Energy Consumption", "figure");           
             sec.AddParagraph("This month 29 MWh of heating energy was provided to the phase 3 building by gas boilers and the combined heat & " +
                 "power plant.Consumption of gas and electricity production compared with previous months is shown below.", "Text");
             //7
-            var img10 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\7.1.jpg");
+            var img10 = sec.AddImage("Resources/7.1.jpg");
             img10.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 10: Phase 3 Energy Consumption/production monthly comparison", "figure");         
 
-            var img11 = sec.AddImage("C:\\Users\\Kirill\\source\\repos\\convPDF\\convPDF\\bin\\Debug\\7.2.jpg");
+            var img11 = sec.AddImage("Resources/7.2.jpg");
             img11.Left = ShapePosition.Center;
             sec.AddParagraph("Figure 11: Phase 3 Control (" + DateMY + ")", "figure");
             sec.AddParagraph("The minimum return water temperature this month was 45.9 °C", "Text");
